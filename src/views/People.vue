@@ -72,6 +72,7 @@ export default {
   font-weight: 700;
   line-height: 1.5rem;
   color: #503f9d;
+  text-align: center;
 }
 .introduction {
   margin-top: 20px;
