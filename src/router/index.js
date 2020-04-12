@@ -13,11 +13,6 @@ export default new Router({
       path: '/films',
       name: 'Films',
       component: () => import('@/views/Films')
-    },
-    {
-      path: '/filmDetail',
-      name: 'FilmDetail',
-      component: () => import('@/views/FilmDetail')
     }
   ]
 })
