@@ -40,12 +40,12 @@
 import { mapState } from 'vuex'
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
-import logo from './common/logo'
+import Logo from './common/Logo'
 export default {
   components: {
     Swiper,
     SwiperSlide,
-    logo
+    Logo
   },
   directives: {
     swiper: directive
