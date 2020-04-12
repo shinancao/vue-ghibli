@@ -18,6 +18,11 @@ export default new Router({
       path: '/people',
       name: 'People',
       component: () => import('@/views/People')
+    },
+    {
+      path: '/species',
+      name: 'Species',
+      component: () => import('@/views/Species')
     }
   ]
 })

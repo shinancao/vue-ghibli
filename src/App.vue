@@ -18,6 +18,10 @@ export default {
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
   font-family: 'Baloo 2', cursive;
   -webkit-font-smoothing: antialiased;
