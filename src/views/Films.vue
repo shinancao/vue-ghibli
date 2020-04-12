@@ -1,8 +1,6 @@
 <template>
   <section>
-    <div class="ghibli-logo">
-      <img src="../assets/logo.png"/>
-    </div>
+    <logo/>
     <div v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
       <div class="swiper-slide" :key="film.id" v-for="film in films">
@@ -42,10 +40,12 @@
 import { mapState } from 'vuex'
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+import logo from './common/logo'
 export default {
   components: {
     Swiper,
-    SwiperSlide
+    SwiperSlide,
+    logo
   },
   directives: {
     swiper: directive
@@ -80,14 +80,6 @@ export default {
 }
 </script>
 <style scoped>
-.ghibli-logo {
-  text-align: center;
-  margin-top: 30px;
-}
-.ghibli-logo img {
-  width: 280px;
-  height: auto;
-}
 .wrapper {
   box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
   border-radius: 10px;
