@@ -53,7 +53,6 @@ export default {
   data () {
     return {
       filmId: '',
-      film: {},
       swiperOption: {
         autoHeight: true,
         navigation: {
@@ -69,7 +68,16 @@ export default {
     })
   },
   created () {
+    this.filmId = this.$route.query.id || ''
+  },
+  mounted () {
     this.$store.dispatch('films/getAllFilms')
+      .then(res => {
+        if (this.filmId !== '') {
+          const index = this.$store.getters['films/getIndexById'](this.filmId)
+          this.mySwiper.slideTo(index, 0, false)
+        }
+      })
     this.$store.dispatch('films/getAllImages')
   },
   methods: {

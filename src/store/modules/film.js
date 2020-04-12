@@ -10,15 +10,22 @@ const state = {
 const getters = {
   getCoverUrlById: state => id => {
     return state.images.find(img => img.id === id).cover_url
+  },
+  getIndexById: state => id => {
+    return state.all.findIndex(film => film.id === id)
   }
 }
 
 // actions
 const actions = {
   getAllFilms ({ commit }) {
-    fetchList().then(response => {
-      commit('setFilms', response.data || [])
-    }).catch(() => {
+    return new Promise((resolve, reject) => {
+      fetchList().then(response => {
+        commit('setFilms', response.data || [])
+        resolve(response.data)
+      }).catch((error) => {
+        reject(error)
+      })
     })
   },
   getAllImages ({ commit }) {

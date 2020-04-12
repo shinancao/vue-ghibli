@@ -2,7 +2,7 @@
   <section>
     <Logo/>
     <div class="people-wrapper">
-      <div v-for="p in people" :key="p.id" class="people-card">
+      <div v-for="p in people" :key="p.id" class="people-card" @click="viewFilm(p.films[0])">
         <div class="title">{{ p.name }}</div>
         <div class="introduction">
           <div class="introduction-item">
@@ -36,6 +36,17 @@ export default {
   },
   created () {
     this.$store.dispatch('people/getPeople')
+  },
+  methods: {
+    viewFilm (filmUrl) {
+      // get film id from filmUrl
+      const url = new URL(filmUrl)
+      const id = url.pathname.split('/')[2]
+      this.$router.push({
+        path: '/films',
+        query: {id: id}
+      })
+    }
   }
 }
 </script>
