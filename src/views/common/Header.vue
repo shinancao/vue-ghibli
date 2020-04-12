@@ -29,10 +29,12 @@ export default {
   methods: {
     handleSelect () {},
     open (path) {
-      this.$router.push({
-        path: path,
-        query: {}
-      })
+      if (path !== this.$route.path) {
+        this.$router.push({
+          path: path,
+          query: {}
+        })
+      }
     }
   }
 }
