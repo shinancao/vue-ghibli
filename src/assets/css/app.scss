@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Baloo 2', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+#app {
+  height: 100%;
+}
+.main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+$primary-color: #f97045;
+$secondary-color: #503f9d;
+$text-color: #352D38;
+$card-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);

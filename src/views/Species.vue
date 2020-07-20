@@ -41,7 +41,7 @@
 import { mapState } from 'vuex'
 import TheLogo from './common/TheLogo'
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-import 'swiper/css/swiper.css'
+
 export default {
   name: 'Species',
   components: {
@@ -94,53 +94,6 @@ export default {
   }
 }
 </script>
-<style scoped>
-.species-wrapper {
-  /* width: 800px; */
-  margin: 0px auto;
-  margin-bottom: 30px;
-}
-.species-card {
-  margin: 40px auto;
-  box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
-  border-radius: 20px;
-  padding: 30px;
-  width: 650px;
-  position: relative;
-}
-.species-card .title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  color: #503f9d;
-  text-align: center;
-}
-.introduction {
-  margin-top: 20px;
-  color: #352D38;
-}
-.item-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-  line-height: 2rem;
-  display: inline-block;
-  width: 100px;
-  margin-right: 15px;
-}
-.item-content {
-  font-size: 1.1rem;
-  line-height: 2rem;
-}
-.list {
-  display: flex;
-}
-.list ul {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1rem;
-  margin-right: 30px;
-}
-.button-color {
-  --swiper-theme-color:#503f9d;
-}
+<style scoped lang="scss">
+  @import '../assets/css/species.scss';
 </style>

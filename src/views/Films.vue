@@ -88,52 +88,6 @@ export default {
   }
 }
 </script>
-<style scoped>
-.wrapper {
-  box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
-  border-radius: 10px;
-  margin: 40px 60px;
-}
-.info-wrapper {
-  display: flex;
-  padding: 30px;
-}
-.info-left img {
-  width: 280px;
-  height: auto;
-  margin-right: 30px;
-}
-.info-right .title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  color: #503f9d;
-}
-.introduction {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.item-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-  line-height: 2rem;
-  color: #352D38;
-  display: inline-block;
-  width: 100px;
-  text-align: right;
-  margin-right: 15px;
-}
-.item-content {
-  font-size: 1.1rem;
-  line-height: 2rem;
-  color: #352D38;
-}
-.description {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  color: #352D38;
-}
-.button-color {
-  --swiper-theme-color:#503f9d;
-}
+<style scoped lang="scss">
+ @import '../assets/css/films.scss';
 </style>

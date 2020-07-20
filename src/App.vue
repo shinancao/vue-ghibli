@@ -17,27 +17,6 @@ export default {
 }
 </script>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-html {
-  font-family: 'Baloo 2', cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-body {
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-#app {
-  height: 100%;
-}
-.main {
-  width: 1000px;
-  margin: 0 auto;
-}
+<style lang="scss">
+  @import './assets/css/app.scss';
 </style>
