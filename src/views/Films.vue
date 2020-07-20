@@ -7,7 +7,13 @@
          <section class="wrapper">
           <div class="info-wrapper">
             <div class="info-left">
-              <img class="cover" :src="getCoverUrl(film.id)"/>
+              <img class="cover"
+                   v-if="getCoverUrl(film.id)"
+                  :src="getCoverUrl(film.id)"/>
+              <div class="img-placeholder"
+                   v-else>
+                <p class="img-placeholder--text">You need to mock the images list at your local.</p>
+              </div>
             </div>
             <div class="info-right">
               <div class="title">{{ film.title }}</div>
