@@ -1,6 +1,6 @@
 <template>
   <section>
-    <logo/>
+    <TheLogo/>
     <div class="species-wrapper">
       <div v-swiper:mySwiper="swiperOption">
         <div class="swiper-wrapper">
@@ -39,12 +39,13 @@
 </template>
 <script>
 import { mapState } from 'vuex'
-import Logo from './common/Logo'
+import TheLogo from './common/TheLogo'
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 export default {
+  name: 'Species',
   components: {
-    Logo,
+    TheLogo,
     Swiper,
     SwiperSlide
   },

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <logo/>
+    <TheLogo/>
     <div v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
       <div class="swiper-slide" :key="film.id" v-for="film in films">
@@ -40,12 +40,13 @@
 import { mapState } from 'vuex'
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
-import Logo from './common/Logo'
+import TheLogo from './common/TheLogo'
 export default {
+  name: 'Films',
   components: {
     Swiper,
     SwiperSlide,
-    Logo
+    TheLogo
   },
   directives: {
     swiper: directive

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <o-header></o-header>
+    <TheHeader/>
     <div class="main">
       <transition name="el-fade-in">
         <router-view/>
@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import OHeader from './views/common/Header'
+import TheHeader from './views/common/TheHeader'
 export default {
   name: 'App',
-  components: { OHeader }
+  components: { TheHeader }
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Logo/>
+    <TheLogo/>
     <div class="people-wrapper">
       <div v-for="p in people" :key="p.id" class="people-card" @click="viewFilm(p.films[0])">
         <div class="title">{{ p.name }}</div>
@@ -24,10 +24,11 @@
 </template>
 <script>
 import { mapState } from 'vuex'
-import Logo from './common/Logo'
+import TheLogo from './common/TheLogo'
 export default {
+  name: 'People',
   components: {
-    Logo
+    TheLogo
   },
   computed: {
     ...mapState({
