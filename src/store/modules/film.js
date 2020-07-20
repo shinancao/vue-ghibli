@@ -9,7 +9,8 @@ const state = {
 // getter
 const getters = {
   getCoverUrlById: state => id => {
-    return state.images.find(img => img.id === id).cover_url
+    let obj = state.images.find(img => img.id === id)
+    return obj ? obj.cover_url : ''
   },
   getIndexById: state => id => {
     return state.all.findIndex(film => film.id === id)
