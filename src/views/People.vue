@@ -51,6 +51,6 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
   @import '../assets/css/people.scss';
 </style>
