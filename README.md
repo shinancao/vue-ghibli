@@ -6,13 +6,13 @@ This project used [ghibli free api](https://ghibliapi.herokuapp.com/) to display
 
 The technology skills includes:
 
-* Use [Vuex]() to manage app states.
-* Use [Vue Router]() to manage app routers.
-* Use [axios]() to request APIs.
-* Use [Element UI]() to build UI layout.
-* Use [SCSS]() to write the components styles.
-* Show how to use [express-proxy-mock]() to mock data at local development.
-* The code style complys with [official guide]().
+* Use [Vuex](https://vuex.vuejs.org/zh/) to manage app states.
+* Use [Vue Router](https://router.vuejs.org/zh/) to manage app routers.
+* Use [axios](https://github.com/axios/axios) to request APIs.
+* Use [Element UI](https://element.eleme.io/#/zh-CN) to build UI layout.
+* Use [SCSS](https://sass-lang.com/) to write the components styles.
+* Show how to use [express-proxy-mock](https://github.com/shunseven/express-proxy-mock) to mock data at local development.
+* The code style complys with [official guide](https://cn.vuejs.org/v2/style-guide/).
 
 
 Once you are familiar with above items, you don't need to setup them from start, you can init your project with the following command next time.
